@@ -1,0 +1,58 @@
+.sidebar {
+    background-color: var(--primary-clr);
+    color: var(--text-primary-clr);
+    padding: var(--gap-2);
+    font-size: var(--step-1);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+h1 {
+    font-size: var(--step-4);
+}
+.hospital-search {
+    margin-block: var(--gap);
+}
+#hospital-input {
+    width: 105%;
+    font-size: var(--step-0);
+    padding: .25em;
+    background-color: var(--primary-clr);
+    color: hsl(0, 0%, 100%, 90%);
+    border: .125em solid hsla(0, 0%, 100%, 0.8);
+}
+#hospital-input::placeholder {
+    color: hsl(0, 0%, 100%, 70%);
+}
+.navigation > ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+.navigation__btn {
+    position: relative;
+    font-family: inherit;
+    font-size: inherit;
+    background-color: transparent;
+    color: var(--text-primary-clr);
+    border: none;
+    cursor: pointer;
+}
+
+.navigation__btn::after {
+    content: "";
+    position: absolute;
+    top: 102.5%;
+    left: 0;
+    height: .15em;
+    width: 0;
+    background-color: var(--text-primary-clr);
+    transition: width .225s linear;
+}
+.navigation__btn_active::after {
+    width: 100%;
+}
+.navigation__btn:hover::after {
+    width: 100%;
+}

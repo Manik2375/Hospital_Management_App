@@ -1,0 +1,29 @@
+:root {
+  --primary-clr: hsl(212, 100%, 17%);
+  --secondary-clr: hsl(212, 100%, 27%);
+  --text-primary-clr: white;
+  --text-secondary-clr: hsl(212, 100%, 90%);
+  --text-tertiary-clr: hsl(212, 100%, 27%)
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+
+
+@media (min-width: 35em) {
+  #root {
+    display: grid;
+    grid-template-columns: minmax(min-content, 20em) 1fr;
+    min-height: 100vh;
+  }
+}

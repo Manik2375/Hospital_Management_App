@@ -1,0 +1,9 @@
+.main-container {
+    padding: var(--gap-2);
+    min-height: 100vh;
+}
+@media (min-width: 30em) {
+    .main-container {
+        min-height: 100vh;
+    }
+}

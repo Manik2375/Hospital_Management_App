@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "name": "City General Hospital",
+        "location": "New York, NY"
+    },
+    {
+        "id": 2,
+        "name": "Riverside Medical Center",
+        "location": "Los Angeles, CA" 
+    },
+    {
+        "id": 3,
+        "name": "Mountainview Hospital",
+        "location": "Denver, CO"
+    },
+    {
+        "id": 4,
+        "name": "Lakeside Healthcare",
+        "location": "Chicago, IL"
+    },
+    {
+        "id": 5,
+        "name": "Sunrise Hospital & Medical Center",
+        "location": "Las Vegas, NV"
+    }
+]

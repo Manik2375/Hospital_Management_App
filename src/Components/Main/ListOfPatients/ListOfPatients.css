@@ -1,0 +1,12 @@
+.listOfPatients {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-2);
+}
+
+.listOfPatientsContainer {
+  height: 90vh;
+}
+.listOfPatient-btn-container {
+    margin-left: auto;
+}
