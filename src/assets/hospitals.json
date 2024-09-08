@@ -1,47 +1,47 @@
 [
     {
         "id": 1,
-        "name": "Civil Hospital",
+        "name": "Civil Hospital 1",
         "location": "Arki, Solan"
     },
     {
         "id": 2,
-        "name": "Civil Hospital",
+        "name": "Civil Hospital 2",
         "location": "Chail, Solan"
     },
     {
         "id": 3,
-        "name": "Civil Hospital",
+        "name": "Civil Hospital 3",
         "location": "Darlaghat, Solan"
     },
     {
         "id": 4,
-        "name": "Civil Hospital",
+        "name": "Civil Hospital 4",
         "location": "Dharampur, Solan"
     },
     {
         "id": 5,
-        "name": "Civil Hospital",
+        "name": "Civil Hospital 5",
         "location": "Kandaghat, Solan"
     },
     {
         "id": 6,
-        "name": "Civil Hospital",
+        "name": "Civil Hospital 6",
         "location": "Kunihar, Solan"
     },
     {
         "id": 7,
-        "name": "Civil Hospital",
+        "name": "Civil Hospital 7",
         "location": "Nalagarh, Solan"
     },
     {
         "id": 8,
-        "name": "Civil Hospital",
+        "name": "Civil Hospital 8",
         "location": "Sayari, Solan"
     },
     {
         "id": 9,
-        "name": "Regional Hospital",
+        "name": "Regional Hospital 9",
         "location": "Solan, Solan"
     }
 ]

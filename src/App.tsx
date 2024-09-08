@@ -13,11 +13,12 @@ if (!storedTab) {
 
 function App() {
   const [currentTab, setCurrentTab] = useState(storedTab);
+  const [hospital, setHospital] = useState("Hospital1")
 
   return (
     <>
-      <Sidebar activeTab={currentTab}   setActiveTab={setCurrentTab} />
-      <MainSection activeTab={currentTab}/>
+      <Sidebar activeTab={currentTab}   setActiveTab={setCurrentTab} setCurrentHospital={setHospital}/>
+      <MainSection activeTab={currentTab} currentHospital={hospital}/>
     </>
   )
 }

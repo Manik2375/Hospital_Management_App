@@ -23,9 +23,11 @@ const navList = [
 function Sidebar({
   activeTab,
   setActiveTab,
+  setCurrentHospital,
 }: {
   activeTab: string;
   setActiveTab: (activeTabName: string) => void;
+  setCurrentHospital: (activeHospitalName: string) => void;
 }) {
   return (
     <aside className="sidebar">
@@ -36,6 +38,13 @@ function Sidebar({
           id="hospital-input"
           name="hospital-input"
           placeholder="Hospital Name →"
+          onChange={(e) => {
+            const matchResult = e.currentTarget.value.match(/\d+/);
+            if (matchResult) {
+              const HospitalId = matchResult[0];
+              setCurrentHospital(`Hospital${Number(HospitalId) % 2 === 0 ? "1" : "2"}`);
+            }
+          }}
         />
         <datalist id="hospital-input-list">
           {HospitalList.map((hospital, index) => {

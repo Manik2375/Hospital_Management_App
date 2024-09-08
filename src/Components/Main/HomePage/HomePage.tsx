@@ -2,13 +2,8 @@ import "./Homepage.css";
 import Card from "../components/Card/Card";
 import { DataGrid, GridColDef, GridRowsProp } from "@mui/x-data-grid";
 import { LineChart } from "@mui/x-charts";
-import Patients from "../../../assets/Hospitals/Hospital1/patients.json";
-import oldPatients from "../../../assets/Hospitals/Hospital1/oldPatients.json";
-
-const oldPatientsArr = Object.values(oldPatients);
-const oldPatientDatesArr = Object.keys(oldPatients);
-
-const patientsListRow: GridRowsProp = Patients;
+import Patients from "../../../assets/patients.json";
+import oldPatients from "../../../assets/oldPatients.json";
 
 const columns: GridColDef[] = [
   { field: "name", headerName: "Name", flex: 1 },
@@ -18,7 +13,19 @@ const columns: GridColDef[] = [
   { field: "bedNumber", headerName: "Bed Number", flex: 1 },
 ];
 
-function HomePage() {
+function HomePage({ currentHospital }: { currentHospital: string }) {
+  let patientsListRow: GridRowsProp = [];
+  let oldPatientsArr, oldPatientsDatesArr;
+  if (currentHospital === "Hospital1") {
+    patientsListRow = Patients.Hospital1;
+    oldPatientsArr = Object.values(oldPatients[0]);
+    oldPatientsDatesArr = Object.keys(oldPatients[0]);
+  } else {
+    patientsListRow = Patients.Hospital2;
+    oldPatientsArr = Object.values(oldPatients[1]);
+    oldPatientsDatesArr = Object.keys(oldPatients[1]);
+  }
+
   return (
     <section className="homepage">
       <h2 className="main-heading">Overview</h2>
@@ -33,7 +40,7 @@ function HomePage() {
         </div>
         <div className="patients-chart">
           <LineChart
-            xAxis={[{ scaleType: "point", data: oldPatientDatesArr }]}
+            xAxis={[{ scaleType: "point", data: oldPatientsDatesArr }]}
             series={[
               {
                 data: oldPatientsArr,
