@@ -25,15 +25,18 @@ function HomePage({ currentHospital }: { currentHospital: string }) {
     oldPatientsArr = Object.values(oldPatients[1]);
     oldPatientsDatesArr = Object.keys(oldPatients[1]);
   }
+  const PatientsNumber = currentHospital === "Hospital1" ? 52 : 89
+  const BedsOccupiedNumber = currentHospital === "Hospital1" ? 28 : 47
+  const DoctorAvailable = currentHospital === "Hospital1" ? 9 : 11
 
   return (
     <section className="homepage">
       <h2 className="main-heading">Overview</h2>
       <div className="homepage-content">
         <div className="cards-container">
-          <Card title="Patients" value={55} />
-          <Card title="Beds occupied" value={28} />
-          <Card title="Doctors available" value={9} />
+          <Card title="Patients" value={PatientsNumber} />
+          <Card title="Beds occupied" value={BedsOccupiedNumber} />
+          <Card title="Doctors available" value={DoctorAvailable} />
         </div>
         <div style={{ height: 300 }} className="patients-table">
           <DataGrid rows={patientsListRow} columns={columns} />
