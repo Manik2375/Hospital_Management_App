@@ -1,27 +1,47 @@
 [
     {
         "id": 1,
-        "name": "City General Hospital",
-        "location": "New York, NY"
+        "name": "Civil Hospital",
+        "location": "Arki, Solan"
     },
     {
         "id": 2,
-        "name": "Riverside Medical Center",
-        "location": "Los Angeles, CA" 
+        "name": "Civil Hospital",
+        "location": "Chail, Solan"
     },
     {
         "id": 3,
-        "name": "Mountainview Hospital",
-        "location": "Denver, CO"
+        "name": "Civil Hospital",
+        "location": "Darlaghat, Solan"
     },
     {
         "id": 4,
-        "name": "Lakeside Healthcare",
-        "location": "Chicago, IL"
+        "name": "Civil Hospital",
+        "location": "Dharampur, Solan"
     },
     {
         "id": 5,
-        "name": "Sunrise Hospital & Medical Center",
-        "location": "Las Vegas, NV"
+        "name": "Civil Hospital",
+        "location": "Kandaghat, Solan"
+    },
+    {
+        "id": 6,
+        "name": "Civil Hospital",
+        "location": "Kunihar, Solan"
+    },
+    {
+        "id": 7,
+        "name": "Civil Hospital",
+        "location": "Nalagarh, Solan"
+    },
+    {
+        "id": 8,
+        "name": "Civil Hospital",
+        "location": "Sayari, Solan"
+    },
+    {
+        "id": 9,
+        "name": "Regional Hospital",
+        "location": "Solan, Solan"
     }
 ]
