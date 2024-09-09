@@ -4,11 +4,10 @@ import {
   GridColDef,
   GridRowsProp,
 } from "@mui/x-data-grid";
-import PatientData from "../../../assets/Hospitals/Hospital1/patients.json";
+import PatientData from "../../../assets/patients.json";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 
-const patientsListRow: GridRowsProp = PatientData;
 
 const columns: GridColDef[] = [
   { field: "name", headerName: "Name", flex: 1 },
@@ -19,7 +18,14 @@ const columns: GridColDef[] = [
   { field: "bedNumber", headerName: "Bed Number", flex: 1 },
 ];
 
-function ListOfPatients() {
+function ListOfPatients({currentHospital}: {currentHospital: string}) {
+  let patientsListRow: GridRowsProp;
+
+  if (currentHospital == "Hospital1") {
+    patientsListRow = PatientData.Hospital1
+  } else {
+    patientsListRow = PatientData.Hospital2
+  }
 
   return (
     <section className="listOfPatients">
